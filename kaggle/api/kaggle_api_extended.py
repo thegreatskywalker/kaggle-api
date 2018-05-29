@@ -23,22 +23,22 @@ from os.path import expanduser
 from os.path import isfile
 import sys
 import zipfile
-from ..api_client import ApiClient
+from api_client import ApiClient
 from kaggle.configuration import Configuration
-from .kaggle_api import KaggleApi
-from ..models.dataset_column import DatasetColumn
-from ..models.dataset_new_request import DatasetNewRequest
-from ..models.dataset_new_version_request import DatasetNewVersionRequest
-from ..models.dataset_upload_file import DatasetUploadFile
-from ..models.kaggle_models_extended import Competition
-from ..models.kaggle_models_extended import Dataset
-from ..models.kaggle_models_extended import DatasetNewResponse
-from ..models.kaggle_models_extended import DatasetNewVersionResponse
-from ..models.kaggle_models_extended import File
-from ..models.kaggle_models_extended import FileUploadInfo
-from ..models.kaggle_models_extended import ListFilesResult
-from ..models.kaggle_models_extended import Submission
-from ..models.kaggle_models_extended import SubmitResult
+from kaggle_api import KaggleApi
+from models.dataset_column import DatasetColumn
+from models.dataset_new_request import DatasetNewRequest
+from models.dataset_new_version_request import DatasetNewVersionRequest
+from models.dataset_upload_file import DatasetUploadFile
+from models.kaggle_models_extended import Competition
+from models.kaggle_models_extended import Dataset
+from models.kaggle_models_extended import DatasetNewResponse
+from models.kaggle_models_extended import DatasetNewVersionResponse
+from models.kaggle_models_extended import File
+from models.kaggle_models_extended import FileUploadInfo
+from models.kaggle_models_extended import ListFilesResult
+from models.kaggle_models_extended import Submission
+from models.kaggle_models_extended import SubmitResult
 import requests
 import six
 import urllib3
